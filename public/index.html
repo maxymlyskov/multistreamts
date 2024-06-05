@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Performance</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold mb-4 text-center">Algorithm Performance Measurement</h1>
+        <div id="results" class="bg-white p-6 rounded shadow-md">
+            <h2 class="text-2xl font-bold mb-6 text-center">Results</h2>
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold mb-2">QuickSort</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-gray-50 rounded shadow">
+                        <p class="text-lg"><strong>Sequential:</strong></p>
+                        <p id="quickSortSequential" class="text-2xl text-blue-600 font-bold">123.45 ms</p>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded shadow">
+                        <p class="text-lg"><strong>Parallel:</strong></p>
+                        <p id="quickSortParallel" class="text-2xl text-blue-600 font-bold">67.89 ms</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold mb-2">Sum</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-gray-50 rounded shadow">
+                        <p class="text-lg"><strong>Sequential:</strong></p>
+                        <p id="sumSequential" class="text-2xl text-green-600 font-bold">45.67 ms</p>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded shadow">
+                        <p class="text-lg"><strong>Parallel:</strong></p>
+                        <p id="sumParallel" class="text-2xl text-green-600 font-bold">23.45 ms</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold mb-2">Max</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-gray-50 rounded shadow">
+                        <p class="text-lg"><strong>Sequential:</strong></p>
+                        <p id="maxSequential" class="text-2xl text-red-600 font-bold">78.90 ms</p>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded shadow">
+                        <p class="text-lg"><strong>Parallel:</strong></p>
+                        <p id="maxParallel" class="text-2xl text-red-600 font-bold">56.78 ms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
